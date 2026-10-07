@@ -701,6 +701,11 @@ p {
   align-items: stretch;
 }
 
+.contact-content {
+  display: grid;
+  gap: 3rem;
+}
+
 .contact-card,
 .contact-note {
   padding: clamp(2rem, 5vw, 3.5rem);
@@ -716,6 +721,84 @@ p {
   font-size: 1.1rem;
   font-style: normal;
   line-height: 1.9;
+}
+
+.office-card {
+  background: linear-gradient(135deg, #ffffff, #eaf8fb);
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  margin: 0 0 2rem;
+}
+
+.contact-details div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.contact-details dt,
+.team-contact-card > p > span:first-child {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-details dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.contact-details a,
+.team-contact-card a {
+  color: var(--primary);
+  overflow-wrap: anywhere;
+}
+
+.team-contacts .section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.team-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.team-contact-card {
+  padding: 1.7rem;
+  border: 1px solid var(--line);
+  border-radius: 1.3rem;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.team-contact-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.team-contact-card p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.75rem;
+  margin-bottom: 0.55rem;
+}
+
+.team-contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.team-contact-card .team-contact-name {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.contact-pending {
+  color: var(--muted);
+  font-style: italic;
 }
 
 .contact-note {
@@ -814,6 +897,7 @@ p {
   .page-hero-grid,
   .purpose-grid,
   .contact-layout,
+  .team-contact-grid,
   .info-grid {
     grid-template-columns: 1fr;
   }
