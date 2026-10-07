@@ -176,10 +176,6 @@ p {
   color: var(--text);
 }
 
-.nav-cta {
-  padding-inline: 1rem;
-}
-
 .hero {
   padding: 4rem 0 2rem;
 }
