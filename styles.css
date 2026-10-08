@@ -121,11 +121,12 @@ p {
 }
 
 .brand-logo {
-  width: 5rem;
+  width: 3.4rem;
   height: 3.4rem;
   border: 1px solid var(--line);
   border-radius: 0.4rem;
-  object-fit: cover;
+  background: #ffffff;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -238,7 +239,7 @@ p {
   width: min(100%, 480px);
   height: auto;
   border: 1px solid var(--line);
-  border-radius: 1.5rem;
+  border-radius: 0;
   box-shadow: var(--shadow);
 }
 
